@@ -1,0 +1,203 @@
+{% extends 'base.html' %} 
+<!-- load humanize -->
+{% load humanize %}
+<!-- block title -->
+{% block title %} | Welcome {% endblock title %}
+{% block content %} {% load static %}
+
+    <!-- Showcase -->
+    <section id="showcase">
+      <div class="container text-center">
+        <div class="home-search p-5">
+          <div class="overlay p-5">
+            <h1 class="display-4 mb-4">Shopping Cart </h1>
+            <p class="lead">
+              Discover hidden gems, everyday essentials, and irresistible deals — all just a search away. Type in what you're looking for and let the shopping magic begin!
+            </p>
+            <div class="search">
+                {% comment %} fix search.html {% endcomment %}
+              <form action={%url "products:search" %}>
+                <!-- Form Row 1 -->
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label class="sr-only">Keywords</label>
+                    <input
+                      type="text"
+                      name="keywords"
+                      class="form-control"
+                      placeholder="Keyword (Name, Description, Brand, etc)"
+                    />
+                  </div>
+                </div>
+                <!-- Form Row 2 -->
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label class="sr-only">Category</label>
+                    <select name="category" class="form-control">
+                      <option selected="true" value=''>
+                        Category (All)
+                      </option>
+                      {% for category in categories %}
+                      <option value="{{category.name}}">{{category.name}}</option>
+                      {% endfor %}
+
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="sr-only">Brand</label>
+                    <select name="brand" class="form-control">
+                      <option selected="true" value=''>
+                        Brand (All)
+                        
+                      </option>
+                      {% for key, value in brand_choices.items %}
+                      <option value="{{key}}">{{value}}</option>
+                      {% endfor %}
+                      
+                    </select>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="sr-only">Tag</label>
+                    <select name="tag" class="form-control" id="type">
+                      <option selected="true" value=''>
+                        Tag (All)
+                      </option>
+                      {% for key, value in tag_choices.items %}
+                      <option value="{{key}}">{{value}}</ option>
+                      {% endfor %}
+                      
+                      
+                    </select>
+                  </div>
+                </div>
+                <button class="btn btn-secondary btn-block mt-4" type="submit">
+                  Submit form
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings -->
+    <section id="products" class="py-5">
+      <div class="container">
+        <h3 class="text-center mb-3">Let's go shopping!</h3>
+        <div class="row">
+
+          {% if products %}
+
+          <!-- Listing 1 -->
+           
+          {% for product in products %}
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card listing-preview">
+           {% if product.product_img %}
+           <img
+            class="card-img-top"
+            src="{{ product.product_img.url }}"
+            alt="{{ product.name }}"
+           />
+          {% else %}
+           <img
+            class="card-img-top"
+            src="{% static 'img/default.jpg' %}"
+            alt="Default image"
+           />
+          {% endif %}
+           
+              <div class="card-img-overlay">
+              </div>
+              <div class="card-body">
+                <div class="listing-heading text-center">
+                  <h4 class="text-primary">{{product.category}}</h4>
+                  <p>
+                    <i class="fas fa-map-marker text-secondary"></i> {{product.category | title}}                  
+                  </p>
+                </div>
+                <hr />
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-th-large"></i> Description {{product.description}}
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-dumbbell"></i> Brand {{product.brand}} 
+                  </div>
+                </div>
+                <div class="row py-2 text-secondary">
+                  <div class="col-6">
+                    <i class="fas fa-bed"></i> Price {{product.price}}
+                  </div>
+                  <div class="col-6">
+                    <i class="fas fa-bath"></i> Tag {{product.tag}}
+                  </div>
+                </div>
+                <hr />
+                <div class="row py-2 text-secondary">
+                  <div class="col-12">
+                    <i class="fas fa-user"></i> {{product.category.name}}
+                  </div>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <div class="col-12">
+                    <i class="fas fa-clock"></i> Reservation required
+                  </div>
+                </div>
+                <hr />
+                <a href={% url "products:product" product.id %} class="btn btn-primary btn-block"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+          {% else %}
+          <div class="col-md-12">
+            <h2>No Product Available</h2>
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-5 bg-secondary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <i class="fas fa-comment fa-4x mr-4"></i>
+            <hr />
+            <h3>Consulting Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              debitis nam! Repudiandae, provident iste consequatur hic
+              dignissimos ratione ea quae.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-home fa-4x mr-4"></i>
+            <hr />
+            <h3>Inpatient Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              debitis nam! Repudiandae, provident iste consequatur hic
+              dignissimos ratione ea quae.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <i class="fas fa-suitcase fa-4x mr-4"></i>
+            <hr />
+            <h3>Primary Care Package</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+              debitis nam! Repudiandae, provident iste consequatur hic
+              dignissimos ratione ea quae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

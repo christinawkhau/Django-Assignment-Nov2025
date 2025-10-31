@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block content %}
+<h2>Shop Categories</h2>
+<div class="category-grid">
+    {% for category in categories %}
+        <div class="category-card">
+            <a href="{% url 'products:products' category.id %}">
+
+
+{% if category.category_img and category.category_img.url %}
+  <img src="{{ category.category_img.url }}" alt="{{ category.name }}" class="category-image">
+{% else %}
+  <img src="{% static 'photos/default.jpg' %}" alt="Default category image" class="category-image">
+{% endif %}
+
+
+
+
+
+
+                <h3>{{ category.name }}</h3>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
