@@ -1,47 +1,43 @@
-{% extends 'base.html' %} {% load static %}
+{% extends 'base.html' %}
+{% load static %}
 {% load humanize %}
+
 {% block title %} Edit myaccount {% endblock %}
 
-{% block content %} 
-<div class="max-w-lg mx-auto p-6">
-      <h1 class="mb-5 text-3xl">Edit myaccount </h1>
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="card p-4 shadow-sm">
+        <h1 class="h3 mb-4 text-center">Edit My Account</h1>
 
-      <form method="post" action="." class="space-y-3">    
-        {%csrf_token %} 
-        <div>
-            <label>First_name</label>
-            <input name="first_name" value="{{request.user.first_name}}" type="text"
-            class="w-full mt-2 py-4 px-6 bg-gray-100 rounded-xl">
-        </div>    
-        <div>
-            <label>Last_name</label>
-            <input name="last_name" value="{{request.user.last_name}}" type="text"
-            class="w-full mt-2 py-4 px-6 bg-gray-100 rounded-xl">
-        </div>  
-        <div>
-            <label>Username</label>
-            <input name="username" value="{{request.user.username}}" type="text"
-            class="w-full mt-2 py-4 px-6 bg-gray-100 rounded-xl">
-        </div>    
+        <form method="post" action=".">
+          {% csrf_token %}
 
-        <div>
-            <label>Email</label>
-            <input name="email" value="{{request.user.email}}" type="email"
-            class="w-full mt-2 py-4 px-6 bg-gray-100 rounded-xl">
-        </div>    
+          <div class="form-group mb-3">
+            <label for="first_name">First Name</label>
+            <input name="first_name" id="first_name" type="text" class="form-control" value="{{ request.user.first_name }}">
+          </div>
 
-        <div>
-            <button class="py-4 px-6 rounded-xl text-white bg-purple-500">Submit</button>
-            
-                
-        </div>
+          <div class="form-group mb-3">
+            <label for="last_name">Last Name</label>
+            <input name="last_name" id="last_name" type="text" class="form-control" value="{{ request.user.last_name }}">
+          </div>
 
+          <div class="form-group mb-3">
+            <label for="username">Username</label>
+            <input name="username" id="username" type="text" class="form-control" value="{{ request.user.username }}">
+          </div>
 
+          <div class="form-group mb-4">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" class="form-control" value="{{ request.user.email }}">
+          </div>
 
-
-
-            
-    </form>
-</div>      
+          <button type="submit" class="btn btn-purple w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
-
