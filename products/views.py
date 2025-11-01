@@ -29,12 +29,12 @@ def products(request, category_id=None):
     }
     return render(request, 'products/products.html', context)
 
-
+#raymond updated for review
 def product(request, product_id):
     product=get_object_or_404(Product, pk=product_id) 
     # context={"product":product}
     if request.method == 'POST':
-        rating=request.POST.get('rating', 3)
+        rating = request.POST.get('rating', 3)
         content = request.POST.get('content', '')
         
         if content:
@@ -46,15 +46,12 @@ def product(request, product_id):
                 review.content = content
                 review.save()
             else:
-                review=Review.object.create(
+                review=Review.objects.create(
                     product=product,
                     rating=rating,
                     content=content,
                     created_by=request.user
                 )
-                
-                
-             
     
             return redirect('products:product', product_id=product.id)
     

@@ -98,8 +98,12 @@
               <div class="col-md-6">
                 <ul class="list-group list-group-flush">
                   <div class="row py-2 text-secondary">
-                  <div class="col-6"><i class="fas fa-th-large"></i> Description {{product.description}}</div>
-                  <div class="col-6"><i class="fas fa-dumbbell"></i> Brand {{liproduct.brand}}</div>
+                
+                 {% if product.get_rating > 0 %}   
+                   <p class="col-4">Rating: {{ product.get_rating }} / 6</p> 
+                 {% endif %}
+                  <div class="col-4"><i class="fas fa-th-large"></i> Description {{product.description}}</div>
+                <div class="col-4"><i class="fas fa-dumbbell"></i> Brand {{liproduct.brand}}</div>
                 </div>
                 <div class="row py-2 text-secondary">
                   <div class="col-6"><i class="fas fa-bed"></i> Price {{product.price}}</div>
@@ -248,6 +252,7 @@
 {% for review in product.reviews.all %}
     <div class="custom-card">
       <strong>Rating: </strong> {{ review.rating }}/6<br>
+      <strong>Date:</strong> {{ review.created_at|date:"Y-m-d"}}<br>
       <strong>Comment:</strong><br>
       {{ review.content }}
     </div>  

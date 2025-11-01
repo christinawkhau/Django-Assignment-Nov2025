@@ -32,6 +32,7 @@ class Order(models.Model):
     def __str__(self):
         return f"Order #{self.id}"
     
+    #raymond, added on sat
     def get_total_price(self):
         if self.paid_amount:
             return self.paid_amount 

@@ -39,7 +39,20 @@ class Product(models.Model):
     product_img1 = models.ImageField(upload_to='photos/%Y/%m/%d/',blank=True, null=True, default='products/default.jpg')
     product_img2 = models.ImageField(upload_to='photos/%Y/%m/%d/',blank=True, null=True, default='products/default.jpg')
 
-    
+        
+    def get_rating(self):
+        reviews_total = 0
+
+        for review in self.reviews.all():
+            reviews_total += review.rating
+
+        if self.reviews.count() > 0:
+            average = reviews_total / self.reviews.count()
+            return round(average, 1)
+
+        return 0.0 
+
+
     def __str__(self):      
         return f"{self.name} - {self.category}"
      

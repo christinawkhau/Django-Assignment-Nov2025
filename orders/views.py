@@ -1,3 +1,5 @@
+
+# my updated version from friday
 import json
 import stripe
 
