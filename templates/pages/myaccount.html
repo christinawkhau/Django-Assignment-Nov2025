@@ -31,13 +31,13 @@
             {% for item in order.items.all %}
             <div class="product mb-6 flex pr-6">
                 <a href="#" class="w-1/4">
-                    <img class="hover:shadow-lg rounded-xl" src="{{ item.product.product_img }}">
+                    <img class="hover:shadow-lg rounded-xl" src="{{ item.product.product_img.url }}">
                 </a>
 
                 <div class="w-3/4 pl-6">
                     <div class="flex justify-between">
                         <a href="#" class="text-lg">{{ item.product.name }}</a>
-                        <p class="mb-6 pt-1 text-gray-400">$9.99</p>
+                        <p class="mb-6 pt-1 text-gray-400">{{ item.get_total_price }}</p>
                 </div>    
 
                 <hr>
@@ -53,7 +53,7 @@
 
     <div>
         <p class="text-lg">Date: {{order.order_date}} </p>
-        <p class="text-lg">Total: $199 </p>
+        <p class="text-lg">Total: ${{ order.get_total_price }} </p>
     </div>
 </div>  
 {% endfor %}

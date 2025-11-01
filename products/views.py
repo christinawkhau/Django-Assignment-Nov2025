@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Category, Product
+from .models import Category, Product, Review
 from cart.models import CartItem
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from . choices import brand_choices, tag_choices
@@ -32,8 +32,33 @@ def products(request, category_id=None):
 
 def product(request, product_id):
     product=get_object_or_404(Product, pk=product_id) 
-    context={"product":product}
-    return render(request, 'products/product.html', context)
+    # context={"product":product}
+    if request.method == 'POST':
+        rating=request.POST.get('rating', 3)
+        content = request.POST.get('content', '')
+        
+        if content:
+            reviews = Review.objects.filter(created_by=request.user, product=product)
+            
+            if reviews.count() > 0:
+                review = reviews.first()
+                review.rating = rating
+                review.content = content
+                review.save()
+            else:
+                review=Review.object.create(
+                    product=product,
+                    rating=rating,
+                    content=content,
+                    created_by=request.user
+                )
+                
+                
+             
+    
+            return redirect('products:product', product_id=product.id)
+    
+    return render(request, 'products/product.html', {'product': product})
 
 def search(request):
     queryset_list=Product.objects.order_by('-price')

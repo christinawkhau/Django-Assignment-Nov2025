@@ -1,35 +1,12 @@
-/* === Base Styles === */
+/* === Base Reset === */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom right, pink, lightblue, lavender);
 }
-
-#top-bar,
-.navbar,
-footer,
-.container {
-  background: transparent !important;
-}
-
-
-.pastel-navbar {
-  position: relative;
-  z-index: 10;
-}
-
-
-
-.balloon,
-.star,
-.ribbon,
-#confetti-canvas {
-  pointer-events: none;
-
-  
-}
-
-
 
 body::after {
   content: '';
@@ -42,38 +19,54 @@ body::after {
   z-index: -1;
 }
 
-
-body {
-  background: linear-gradient(to bottom right, pink, lightblue, lavender);
-  font-family: sans-serif;
-  color: #333;
+/* === Layout Containers === */
+.container,
+#top-bar,
+.navbar,
+footer {
+  background: transparent !important;
 }
 
-
-#top-bar {
-  background: rgba(255, 255, 255, 0.6); /* soft white with transparency */
-  backdrop-filter: blur(4px); /* optional: adds a frosted glass effect */
+/* === Navigation === */
+.navbar {
+  opacity: 0.9;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
 }
 
 .pastel-navbar {
-  background: rgba(255, 255, 255, 0.6); /* soft white with transparency */
-  backdrop-filter: blur(6px); /* frosted glass effect */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* elegant shadow */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+#top-bar {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 .pastel-footer {
-  background: rgba(255, 255, 255, 0.6); /* soft white with transparency */
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(6px);
   color: #4b3f2f;
 }
 
-
+/* === Typography === */
 h1, h2, h3 {
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #4b3f2f;
 }
 
+/* === Buttons === */
+.btn-secondary {
+  color: #fff !important;
+}
+
+/* === Images & Logo === */
 img {
   width: 100%;
 }
@@ -82,29 +75,12 @@ img {
   width: 80px;
 }
 
-.navbar {
-  opacity: 0.9;
-  text-transform: uppercase;
-}
-
-.navbar {
-  position: relative;
-  z-index: 10;
-}
-
-
-
-
-
+/* === Social Icons === */
 .social a {
   margin-right: 0.4rem;
 }
 
-.btn-secondary {
-  color: #fff !important;
-}
-
-/* === Showcase & Hero Sections === */
+/* === Showcase Section === */
 #showcase {
   background: url(../img/showcase.jpg) no-repeat center/cover fixed;
   position: relative;
@@ -129,6 +105,7 @@ img {
   background: rgba(51, 51, 51, 0.8);
 }
 
+/* === Services Section === */
 #services {
   background: url(../img/building.jpg) no-repeat top center/cover fixed;
   min-height: 300px;
@@ -146,6 +123,7 @@ img {
   background: rgba(32, 134, 107, 0.8);
 }
 
+/* === Showcase Inner === */
 #showcase-inner {
   background: url(../img/building.jpg) no-repeat top center/cover fixed;
   position: relative;
@@ -167,52 +145,14 @@ img {
   min-height: 270px;
 }
 
+/* === Work Section === */
 #work {
   padding: 6rem 0;
 }
 
+/* === Listing Preview === */
 .listing-preview a {
   position: relative;
-}
-
-/* === Responsive Breakpoints === */
-@media (max-width: 991px) {
-  #showcase {
-    padding-top: 4rem;
-  }
-  #showcase h1 {
-    font-size: 40px;
-  }
-  .hide-md-down {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  #showcase {
-    padding-top: 3rem;
-  }
-  #showcase h1 {
-    font-size: 40px;
-  }
-  #showcase p {
-    display: none;
-  }
-  #top-bar {
-    text-align: center;
-  }
-  #top-bar .social {
-    text-align: center !important;
-  }
-}
-
-@media (max-width: 576px) {
-  #showcase h1 {
-    font-size: 30px;
-  }
-  #showcase-inner h1 {
-    font-size: 40px;
-  }
 }
 
 /* === Category Section === */
@@ -289,7 +229,6 @@ img {
   opacity: 0;
 }
 
-
 .balloon {
   position: absolute;
   bottom: -100px;
@@ -298,26 +237,16 @@ img {
 }
 
 @keyframes floatUp {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-120vh) rotate(360deg);
-    opacity: 0;
-  }
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
 }
-
 
 .card:hover {
   box-shadow: 0 0 20px rgba(255, 192, 203, 0.6);
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
-
 
 .star {
   position: absolute;
@@ -333,3 +262,42 @@ img {
   50% { opacity: 1; }
 }
 
+/* === Responsive Breakpoints === */
+@media (max-width: 991px) {
+  #showcase {
+    padding-top: 4rem;
+  }
+  #showcase h1 {
+    font-size: 40px;
+  }
+  .hide-md-down {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #showcase {
+    padding-top: 3rem;
+  }
+  #showcase h1 {
+    font-size: 40px;
+  }
+  #showcase p {
+    display: none;
+  }
+  #top-bar {
+    text-align: center;
+  }
+  #top-bar .social {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #showcase h1 {
+    font-size: 30px;
+  }
+  #showcase-inner h1 {
+    font-size: 40px;
+  }
+}

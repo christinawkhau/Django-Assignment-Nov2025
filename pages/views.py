@@ -34,7 +34,7 @@ def edit_myaccount(request):
         user.username=request.POST.get('username')
         user.save()
 
-        return redirect('account')
+        return redirect('edit_myaccount')
     return render(request, 'pages/edit_myaccount.html')
 
 

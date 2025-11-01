@@ -210,6 +210,55 @@
   Add to cart
 </button>
           </div>
+          
+
+  <div class="reviews-section">
+  <h2 class="reviews-heading">Reviews</h2><br>
+  <br />
+  <br />
+</div>
+
+{% if request.user.is_authenticated %}
+  <form method="post" action="." class="custom-box">
+    {% csrf_token %}
+
+      <div>
+        <label>Rating</label><br>
+        <select name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+
+<div>
+  <label>Comment</label><br>
+  <textarea name="content"></textarea>
+</div>
+
+<div>
+  <button>Submit</button>
+</div>
+</form>
+{% endif %}
+
+{% for review in product.reviews.all %}
+    <div class="custom-card">
+      <strong>Rating: </strong> {{ review.rating }}/6<br>
+      <strong>Comment:</strong><br>
+      {{ review.content }}
+    </div>  
+{% endfor %}
+</div>  
+
+
+
+
+
+
         </div>
       </div>
 </section>

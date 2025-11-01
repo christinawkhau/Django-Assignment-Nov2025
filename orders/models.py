@@ -26,8 +26,17 @@ class Order(models.Model):
     paid=models.BooleanField(default=False)
     paid_amount=models.IntegerField(blank=True, null=True)
     
+    class Meta:
+        ordering=('-order_date',)
+    
     def __str__(self):
-        return f"{self.status}"
+        return f"Order #{self.id}"
+    
+    def get_total_price(self):
+        if self.paid_amount:
+            return self.paid_amount 
+        
+        return 0
     
 class OrderItem(models.Model):
     order= models.ForeignKey(Order, on_delete=models.CASCADE)
@@ -36,7 +45,11 @@ class OrderItem(models.Model):
     price= models.DecimalField(max_digits=10, decimal_places=2)
     
     def __str__(self):
-        return self.order
+        return f"{self.quantity} x {self.product.name} for Order #{self.order.id}"
+    
+    
+    def get_total_price(self):
+        return self.price
     
 
     
