@@ -1,0 +1,202 @@
+[
+    {
+        "user": 1,
+        "phone_number": "+81 965-431-3024",
+        "address": "626 Main Street, Phoenix, Mississippi 29112 (MS)",
+        "company": "Dooley, Kozey and Cronin",
+        "department": "Engineering",
+        "role": "Sales Manager"
+    },
+    {
+        "user": 2,
+        "phone_number": "+49 258-627-6644",
+        "address": "385 Fifth Street, Houston, Alabama 38807 (AL)",
+        "company": "Spinka - Dickinson",
+        "department": "Support",
+        "role": "Support Specialist"
+    },
+    {
+        "user": 3,
+        "phone_number": "+81 210-652-2785",
+        "address": "1642 Ninth Street, Washington, Alabama 32822 (AL)",
+        "company": "Schiller - Zieme",
+        "department": "Research and Development",
+        "role": "Accountant"
+    },
+    {
+        "user": 4,
+        "phone_number": "+49 614-958-9364",
+        "address": "238 Jefferson Street, Seattle, Pennsylvania 68354 (PA)",
+        "company": "Pagac and Sons",
+        "department": "Support",
+        "role": "Research Analyst"
+    },
+    {
+        "user": 5,
+        "phone_number": "+91 759-776-1614",
+        "address": "607 Fourth Street, Jacksonville, Colorado 26593 (CO)",
+        "company": "Graham - Gulgowski",
+        "department": "Human Resources",
+        "role": "Quality Assurance Engineer"
+    },
+    {
+        "user": 6,
+        "phone_number": "+91 607-295-6448",
+        "address": "547 First Street, Fort Worth, Tennessee 83843 (TN)",
+        "company": "Pfannerstill Inc",
+        "department": "Product Management",
+        "role": "Research Analyst"
+    },
+    {
+        "user": 7,
+        "phone_number": "+61 260-824-4986",
+        "address": "664 Maple Street, Indianapolis, Delaware 86684 (DE)",
+        "company": "Dickens - Beahan",
+        "department": "Engineering",
+        "role": "Web Developer"
+    },
+    {
+        "user": 8,
+        "phone_number": "+1 458-853-7877",
+        "address": "1197 First Street, Fort Worth, Rhode Island 24771 (RI)",
+        "company": "Nikolaus Inc",
+        "department": "Marketing",
+        "role": "Chief Executive Officer"
+    },
+    {
+        "user": 9,
+        "phone_number": "+92 933-608-5081",
+        "address": "466 Pine Street, San Antonio, Louisiana 72360 (LA)",
+        "company": "Gorczany - Gottlieb",
+        "department": "Support",
+        "role": "Legal Counsel"
+    },
+    {
+        "user": 10,
+        "phone_number": "+49 770-658-4885",
+        "address": "1964 Oak Street, New York, Utah 89352 (UT)",
+        "company": "Pollich - Hilpert",
+        "department": "Marketing",
+        "role": "Chief Financial Officer"
+    },
+    {
+        "user": 11,
+        "phone_number": "+92 870-217-6201",
+        "address": "576 Fifth Street, Denver, South Dakota 57252 (SD)",
+        "company": "Considine - Torp",
+        "department": "Services",
+        "role": "Web Developer"
+    },
+    {
+        "user": 12,
+        "phone_number": "+49 989-461-8403",
+        "address": "1627 Sixth Street, Jacksonville, West Virginia 41810 (WV)",
+        "company": "Miller, Schowalter and Wisozk",
+        "department": "Accounting",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 13,
+        "phone_number": "+49 393-605-6968",
+        "address": "1413 Maple Street, New York, North Dakota 73696 (ND)",
+        "company": "Botsford, Marquardt and Roberts",
+        "department": "Engineering",
+        "role": "Database Administrator"
+    },
+    {
+        "user": 14,
+        "phone_number": "+44 373-953-5028",
+        "address": "208 Second Street, Columbus, Ohio 42044 (OH)",
+        "company": "Zulauf and Sons",
+        "department": "Accounting",
+        "role": "Chief Executive Officer"
+    },
+    {
+        "user": 15,
+        "phone_number": "+81 905-252-7319",
+        "address": "31 Maple Street, San Jose, Utah 78243 (UT)",
+        "company": "Spinka - Dickinson",
+        "department": "Marketing",
+        "role": "Software Architect"
+    },
+    {
+        "user": 16,
+        "phone_number": "+61 731-431-3457",
+        "address": "1125 First Street, Columbus, Iowa 30973 (IA)",
+        "company": "Herzog Inc",
+        "department": "Accounting",
+        "role": "Database Administrator"
+    },
+    {
+        "user": 17,
+        "phone_number": "+1 623-880-6871",
+        "address": "1170 Lincoln Street, San Diego, Wyoming 43423 (WY)",
+        "company": "Predovic - Johns",
+        "department": "Support",
+        "role": "Chief Financial Officer"
+    },
+    {
+        "user": 18,
+        "phone_number": "+81 507-434-8733",
+        "address": "907 Seventh Street, Columbus, Arkansas 78805 (AR)",
+        "company": "Jast - Nader",
+        "department": "Training",
+        "role": "Data Analyst"
+    },
+    {
+        "user": 19,
+        "phone_number": "+91 228-363-7806",
+        "address": "996 Oak Street, Chicago, New Mexico 11407 (NM)",
+        "company": "Prohaska - Thiel",
+        "department": "Human Resources",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 20,
+        "phone_number": "+44 468-628-6686",
+        "address": "1873 Main Street, New York, Arkansas 26600 (AR)",
+        "company": "Kuhlman LLC",
+        "department": "Legal",
+        "role": "Web Developer"
+    },
+    {
+        "user": 21,
+        "phone_number": "+81 259-957-5711",
+        "address": "1892 Lincoln Street, Philadelphia, New Jersey 62091 (NJ)",
+        "company": "Mayer - Smitham",
+        "department": "Engineering",
+        "role": "Chief Technology Officer"
+    },
+    {
+        "user": 22,
+        "phone_number": "+44 468-357-7872",
+        "address": "1701 Eighth Street, Columbus, Illinois 31585 (IL)",
+        "company": "Langworth Group",
+        "department": "Legal",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 23,
+        "phone_number": "+92 468-541-7133",
+        "address": "401 Fourth Street, Dallas, New Jersey 54972 (NJ)",
+        "company": "Grady LLC",
+        "department": "Sales",
+        "role": "Database Administrator"
+    },
+    {
+        "user": 24,
+        "phone_number": "+1 341-597-6694",
+        "address": "1578 Fourth Street, Columbus, Missouri 20673 (MO)",
+        "company": "Spinka LLC",
+        "department": "Accounting",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 25,
+        "phone_number": "+92 518-863-2863",
+        "address": "1591 Adams Street, Philadelphia, New York 69521 (NY)",
+        "company": "Leffler, Rolfson and Becker",
+        "department": "Legal",
+        "role": "Business Development Manager"
+    }
+]

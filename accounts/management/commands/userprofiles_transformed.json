@@ -1,0 +1,572 @@
+[
+    {
+        "user": 1,
+        "phone_number": "+81 965-431-3024",
+        "address": {
+            "address": "626 Main Street",
+            "city": "Phoenix",
+            "state": "Mississippi",
+            "stateCode": "MS",
+            "postalCode": "29112",
+            "coordinates": {
+                "lat": -77.16213,
+                "lng": -92.084824
+            },
+            "country": "United States"
+        },
+        "company": "Dooley, Kozey and Cronin",
+        "department": "Engineering",
+        "role": "Sales Manager"
+    },
+    {
+        "user": 2,
+        "phone_number": "+49 258-627-6644",
+        "address": {
+            "address": "385 Fifth Street",
+            "city": "Houston",
+            "state": "Alabama",
+            "stateCode": "AL",
+            "postalCode": "38807",
+            "coordinates": {
+                "lat": 22.815468,
+                "lng": 115.608581
+            },
+            "country": "United States"
+        },
+        "company": "Spinka - Dickinson",
+        "department": "Support",
+        "role": "Support Specialist"
+    },
+    {
+        "user": 3,
+        "phone_number": "+81 210-652-2785",
+        "address": {
+            "address": "1642 Ninth Street",
+            "city": "Washington",
+            "state": "Alabama",
+            "stateCode": "AL",
+            "postalCode": "32822",
+            "coordinates": {
+                "lat": 45.289366,
+                "lng": 46.832664
+            },
+            "country": "United States"
+        },
+        "company": "Schiller - Zieme",
+        "department": "Research and Development",
+        "role": "Accountant"
+    },
+    {
+        "user": 4,
+        "phone_number": "+49 614-958-9364",
+        "address": {
+            "address": "238 Jefferson Street",
+            "city": "Seattle",
+            "state": "Pennsylvania",
+            "stateCode": "PA",
+            "postalCode": "68354",
+            "coordinates": {
+                "lat": 16.782513,
+                "lng": -139.34723
+            },
+            "country": "United States"
+        },
+        "company": "Pagac and Sons",
+        "department": "Support",
+        "role": "Research Analyst"
+    },
+    {
+        "user": 5,
+        "phone_number": "+91 759-776-1614",
+        "address": {
+            "address": "607 Fourth Street",
+            "city": "Jacksonville",
+            "state": "Colorado",
+            "stateCode": "CO",
+            "postalCode": "26593",
+            "coordinates": {
+                "lat": 0.505589,
+                "lng": -157.43281
+            },
+            "country": "United States"
+        },
+        "company": "Graham - Gulgowski",
+        "department": "Human Resources",
+        "role": "Quality Assurance Engineer"
+    },
+    {
+        "user": 6,
+        "phone_number": "+91 607-295-6448",
+        "address": {
+            "address": "547 First Street",
+            "city": "Fort Worth",
+            "state": "Tennessee",
+            "stateCode": "TN",
+            "postalCode": "83843",
+            "coordinates": {
+                "lat": 75.32627,
+                "lng": -26.15285
+            },
+            "country": "United States"
+        },
+        "company": "Pfannerstill Inc",
+        "department": "Product Management",
+        "role": "Research Analyst"
+    },
+    {
+        "user": 7,
+        "phone_number": "+61 260-824-4986",
+        "address": {
+            "address": "664 Maple Street",
+            "city": "Indianapolis",
+            "state": "Delaware",
+            "stateCode": "DE",
+            "postalCode": "86684",
+            "coordinates": {
+                "lat": 35.289664,
+                "lng": 7.063255
+            },
+            "country": "United States"
+        },
+        "company": "Dickens - Beahan",
+        "department": "Engineering",
+        "role": "Web Developer"
+    },
+    {
+        "user": 8,
+        "phone_number": "+1 458-853-7877",
+        "address": {
+            "address": "1197 First Street",
+            "city": "Fort Worth",
+            "state": "Rhode Island",
+            "stateCode": "RI",
+            "postalCode": "24771",
+            "coordinates": {
+                "lat": -81.194833,
+                "lng": -87.948158
+            },
+            "country": "United States"
+        },
+        "company": "Nikolaus Inc",
+        "department": "Marketing",
+        "role": "Chief Executive Officer"
+    },
+    {
+        "user": 9,
+        "phone_number": "+92 933-608-5081",
+        "address": {
+            "address": "466 Pine Street",
+            "city": "San Antonio",
+            "state": "Louisiana",
+            "stateCode": "LA",
+            "postalCode": "72360",
+            "coordinates": {
+                "lat": 74.074918,
+                "lng": -25.312703
+            },
+            "country": "United States"
+        },
+        "company": "Gorczany - Gottlieb",
+        "department": "Support",
+        "role": "Legal Counsel"
+    },
+    {
+        "user": 10,
+        "phone_number": "+49 770-658-4885",
+        "address": {
+            "address": "1964 Oak Street",
+            "city": "New York",
+            "state": "Utah",
+            "stateCode": "UT",
+            "postalCode": "89352",
+            "coordinates": {
+                "lat": 41.331324,
+                "lng": 151.782727
+            },
+            "country": "United States"
+        },
+        "company": "Pollich - Hilpert",
+        "department": "Marketing",
+        "role": "Chief Financial Officer"
+    },
+    {
+        "user": 11,
+        "phone_number": "+92 870-217-6201",
+        "address": {
+            "address": "576 Fifth Street",
+            "city": "Denver",
+            "state": "South Dakota",
+            "stateCode": "SD",
+            "postalCode": "57252",
+            "coordinates": {
+                "lat": -66.218177,
+                "lng": -145.340165
+            },
+            "country": "United States"
+        },
+        "company": "Considine - Torp",
+        "department": "Services",
+        "role": "Web Developer"
+    },
+    {
+        "user": 12,
+        "phone_number": "+49 989-461-8403",
+        "address": {
+            "address": "1627 Sixth Street",
+            "city": "Jacksonville",
+            "state": "West Virginia",
+            "stateCode": "WV",
+            "postalCode": "41810",
+            "coordinates": {
+                "lat": 24.857497,
+                "lng": -34.865429
+            },
+            "country": "United States"
+        },
+        "company": "Miller, Schowalter and Wisozk",
+        "department": "Accounting",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 13,
+        "phone_number": "+49 393-605-6968",
+        "address": {
+            "address": "1413 Maple Street",
+            "city": "New York",
+            "state": "North Dakota",
+            "stateCode": "ND",
+            "postalCode": "73696",
+            "coordinates": {
+                "lat": -25.0377,
+                "lng": -151.70469
+            },
+            "country": "United States"
+        },
+        "company": "Botsford, Marquardt and Roberts",
+        "department": "Engineering",
+        "role": "Database Administrator"
+    },
+    {
+        "user": 14,
+        "phone_number": "+44 373-953-5028",
+        "address": {
+            "address": "208 Second Street",
+            "city": "Columbus",
+            "state": "Ohio",
+            "stateCode": "OH",
+            "postalCode": "42044",
+            "coordinates": {
+                "lat": -44.443762,
+                "lng": -151.420561
+            },
+            "country": "United States"
+        },
+        "company": "Zulauf and Sons",
+        "department": "Accounting",
+        "role": "Chief Executive Officer"
+    },
+    {
+        "user": 15,
+        "phone_number": "+81 905-252-7319",
+        "address": {
+            "address": "31 Maple Street",
+            "city": "San Jose",
+            "state": "Utah",
+            "stateCode": "UT",
+            "postalCode": "78243",
+            "coordinates": {
+                "lat": 8.152876,
+                "lng": 113.29799
+            },
+            "country": "United States"
+        },
+        "company": "Spinka - Dickinson",
+        "department": "Marketing",
+        "role": "Software Architect"
+    },
+    {
+        "user": 16,
+        "phone_number": "+61 731-431-3457",
+        "address": {
+            "address": "1125 First Street",
+            "city": "Columbus",
+            "state": "Iowa",
+            "stateCode": "IA",
+            "postalCode": "30973",
+            "coordinates": {
+                "lat": 12.789127,
+                "lng": 85.792598
+            },
+            "country": "United States"
+        },
+        "company": "Herzog Inc",
+        "department": "Accounting",
+        "role": "Database Administrator"
+    },
+    {
+        "user": 17,
+        "phone_number": "+1 623-880-6871",
+        "address": {
+            "address": "1170 Lincoln Street",
+            "city": "San Diego",
+            "state": "Wyoming",
+            "stateCode": "WY",
+            "postalCode": "43423",
+            "coordinates": {
+                "lat": -83.31484,
+                "lng": 11.768071
+            },
+            "country": "United States"
+        },
+        "company": "Predovic - Johns",
+        "department": "Support",
+        "role": "Chief Financial Officer"
+    },
+    {
+        "user": 18,
+        "phone_number": "+81 507-434-8733",
+        "address": {
+            "address": "907 Seventh Street",
+            "city": "Columbus",
+            "state": "Arkansas",
+            "stateCode": "AR",
+            "postalCode": "78805",
+            "coordinates": {
+                "lat": -64.846516,
+                "lng": 174.775744
+            },
+            "country": "United States"
+        },
+        "company": "Jast - Nader",
+        "department": "Training",
+        "role": "Data Analyst"
+    },
+    {
+        "user": 19,
+        "phone_number": "+91 228-363-7806",
+        "address": {
+            "address": "996 Oak Street",
+            "city": "Chicago",
+            "state": "New Mexico",
+            "stateCode": "NM",
+            "postalCode": "11407",
+            "coordinates": {
+                "lat": 44.321308,
+                "lng": -3.723903
+            },
+            "country": "United States"
+        },
+        "company": "Prohaska - Thiel",
+        "department": "Human Resources",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 20,
+        "phone_number": "+44 468-628-6686",
+        "address": {
+            "address": "1873 Main Street",
+            "city": "New York",
+            "state": "Arkansas",
+            "stateCode": "AR",
+            "postalCode": "26600",
+            "coordinates": {
+                "lat": 34.722451,
+                "lng": 63.448927
+            },
+            "country": "United States"
+        },
+        "company": "Kuhlman LLC",
+        "department": "Legal",
+        "role": "Web Developer"
+    },
+    {
+        "user": 21,
+        "phone_number": "+81 259-957-5711",
+        "address": {
+            "address": "1892 Lincoln Street",
+            "city": "Philadelphia",
+            "state": "New Jersey",
+            "stateCode": "NJ",
+            "postalCode": "62091",
+            "coordinates": {
+                "lat": 52.993694,
+                "lng": 160.486892
+            },
+            "country": "United States"
+        },
+        "company": "Mayer - Smitham",
+        "department": "Engineering",
+        "role": "Chief Technology Officer"
+    },
+    {
+        "user": 22,
+        "phone_number": "+44 468-357-7872",
+        "address": {
+            "address": "1701 Eighth Street",
+            "city": "Columbus",
+            "state": "Illinois",
+            "stateCode": "IL",
+            "postalCode": "31585",
+            "coordinates": {
+                "lat": -54.833799,
+                "lng": -174.504027
+            },
+            "country": "United States"
+        },
+        "company": "Langworth Group",
+        "department": "Legal",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 23,
+        "phone_number": "+92 468-541-7133",
+        "address": {
+            "address": "401 Fourth Street",
+            "city": "Dallas",
+            "state": "New Jersey",
+            "stateCode": "NJ",
+            "postalCode": "54972",
+            "coordinates": {
+                "lat": -30.190759,
+                "lng": -58.705979
+            },
+            "country": "United States"
+        },
+        "company": "Grady LLC",
+        "department": "Sales",
+        "role": "Database Administrator"
+    },
+    {
+        "user": 24,
+        "phone_number": "+1 341-597-6694",
+        "address": {
+            "address": "1578 Fourth Street",
+            "city": "Columbus",
+            "state": "Missouri",
+            "stateCode": "MO",
+            "postalCode": "20673",
+            "coordinates": {
+                "lat": -32.828675,
+                "lng": -82.557354
+            },
+            "country": "United States"
+        },
+        "company": "Spinka LLC",
+        "department": "Accounting",
+        "role": "Business Analyst"
+    },
+    {
+        "user": 25,
+        "phone_number": "+92 518-863-2863",
+        "address": {
+            "address": "1591 Adams Street",
+            "city": "Philadelphia",
+            "state": "New York",
+            "stateCode": "NY",
+            "postalCode": "69521",
+            "coordinates": {
+                "lat": -26.832913,
+                "lng": -75.445017
+            },
+            "country": "United States"
+        },
+        "company": "Leffler, Rolfson and Becker",
+        "department": "Legal",
+        "role": "Business Development Manager"
+    },
+    {
+        "user": 26,
+        "phone_number": "+61 708-508-4638",
+        "address": {
+            "address": "1065 Lincoln Street",
+            "city": "Dallas",
+            "state": "Maine",
+            "stateCode": "ME",
+            "postalCode": "84898",
+            "coordinates": {
+                "lat": 67.768359,
+                "lng": 71.268643
+            },
+            "country": "United States"
+        },
+        "company": "Tromp, Gaylord and Weber",
+        "department": "Accounting",
+        "role": "Project Manager"
+    },
+    {
+        "user": 27,
+        "phone_number": "+44 254-761-6843",
+        "address": {
+            "address": "1163 Pine Street",
+            "city": "Los Angeles",
+            "state": "Nevada",
+            "stateCode": "NV",
+            "postalCode": "58781",
+            "coordinates": {
+                "lat": -3.456681,
+                "lng": -134.937482
+            },
+            "country": "United States"
+        },
+        "company": "Morissette, Baumbach and Auer",
+        "department": "Support",
+        "role": "Legal Counsel"
+    },
+    {
+        "user": 28,
+        "phone_number": "+1 808-757-9867",
+        "address": {
+            "address": "1946 Oak Street",
+            "city": "Phoenix",
+            "state": "Massachusetts",
+            "stateCode": "MA",
+            "postalCode": "41540",
+            "coordinates": {
+                "lat": -9.87059,
+                "lng": -72.336845
+            },
+            "country": "United States"
+        },
+        "company": "Cremin Inc",
+        "department": "Product Management",
+        "role": "Quality Assurance Engineer"
+    },
+    {
+        "user": 29,
+        "phone_number": "+1 240-833-4680",
+        "address": {
+            "address": "1837 Maple Street",
+            "city": "Indianapolis",
+            "state": "Delaware",
+            "stateCode": "DE",
+            "postalCode": "81783",
+            "coordinates": {
+                "lat": 35.498256,
+                "lng": 154.088476
+            },
+            "country": "United States"
+        },
+        "company": "Gerlach, Funk and Schoen",
+        "department": "Services",
+        "role": "Sales Manager"
+    },
+    {
+        "user": 30,
+        "phone_number": "+1 514-384-3300",
+        "address": {
+            "address": "568 Tenth Street",
+            "city": "San Francisco",
+            "state": "Montana",
+            "stateCode": "MT",
+            "postalCode": "54698",
+            "coordinates": {
+                "lat": 20.946052,
+                "lng": 100.228822
+            },
+            "country": "United States"
+        },
+        "company": "Kreiger Inc",
+        "department": "Services",
+        "role": "Human Resources Manager"
+    }
+]

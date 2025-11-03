@@ -9,7 +9,7 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
         # Locate the JSON file relative to this script
         base_dir = os.path.dirname(__file__)
-        file_path = os.path.join(base_dir, "products_filtered.json")
+        file_path = os.path.join(base_dir, "products_transformed.json")
 
         # Load the filtered product data
         try:
